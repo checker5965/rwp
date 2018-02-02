@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Weekly Report
+{% endblock %}
+
+{% block main %}
+    <img class="img-circle" src="https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-9/21463380_148763025721243_7092654936439081978_n.jpg?oh=71666a75a2a8917ed33b07a48ca0720f&oe=5AEDDFF3" align="middle" alt="Ruhi" width="120" height="120">
+    <br><br>
+    <p>Please be careful while submitting your report. Once submitted, the report cannot be edited!</p>
+    <form action="/report" method="post">
+        <div class="form-group">
+            <textarea name="report" rows="5" cols="100" placeholder="Report"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+{% endblock %}

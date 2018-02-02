@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Feedback
+{% endblock %}
+
+{% block main %}
+    <img class="img-circle" src="https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-9/21463380_148763025721243_7092654936439081978_n.jpg?oh=71666a75a2a8917ed33b07a48ca0720f&oe=5AEDDFF3" align="middle" alt="Ruhi" width="120" height="120">
+    <br><br>
+    <marquee>Please submit any feedback or special requests here.</marquee>
+    <form action="/feedback" method="post">
+        <div class="form-group">
+            <textarea name="feedback" rows="5" cols="100" placeholder="Feedback"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+{% endblock %}

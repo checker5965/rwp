@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <table class = "table">
+    <thead class = "mdb-color darken-3">
+    <tr>
+        <td>Didi or Bhaiya's First Name</td>
+        <td>Didi or Bhaiya's Last Name</td>
+        <td>Team</td>
+        <td>Number</td>
+    </tr>
+    <tr>
+        <td>{{ didif }}</td>
+        <td>{{ didil }}</td>
+        <td>{{ team }}</td>
+        <td>{{ number }}</td>
+    </tr>
+    </table>
+    <table class = "table" style = "position: relative; bottom: 5px ">
+        <tr>
+            <td>SUPERVISOR CONTACT(Didi)</td>
+            <td></td>
+            <td></td>
+            <td>+91-8398869243</td>
+        </tr>
+    </table>
+    <table class = "table" style = "position: relative; bottom: 5px ">
+        <tr>
+            <td>SUPERVISOR CONTACT(Bhaiya)</td>
+            <td></td>
+            <td></td>
+            <td>+91-8685922791</td>
+        </tr>
+    </table>
+{% endblock %}

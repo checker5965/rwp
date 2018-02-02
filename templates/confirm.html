@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Confirm
+{% endblock %}
+
+{% block main %}
+    <img class="img-circle" src="https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-9/21463380_148763025721243_7092654936439081978_n.jpg?oh=71666a75a2a8917ed33b07a48ca0720f&oe=5AEDDFF3" align="middle" alt="Ruhi" width="120" height="120">
+    <br><br>
+    <marquee>Check your Ashoka E-mail for the confirmation code.</marquee>
+    <form action="/confirm" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text"/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password"/>
+        </div>
+         <div class="form-group">
+            <input class="form-control" name="cnfcode" placeholder="Verification Code" type="password"/>
+        </div>
+        <button class="btn btn-primary" type="submit">Log In</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <img class="img-circle" src="https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-9/21463380_148763025721243_7092654936439081978_n.jpg?oh=71666a75a2a8917ed33b07a48ca0720f&oe=5AEDDFF3" align="middle" alt="Ruhi" width="120" height="120">
+    <br><br>
+    <marquee>All Fields are Case Sensitive</marquee>
+    <form action="/register" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text"/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="first" placeholder="First Name" type="text"/>
+        </div>
+         <div class="form-group">
+            <input class="form-control" name="last" placeholder="Last Name" type="text"/>
+        </div>
+         <div class="form-group">
+            <input class="form-control" name="email" placeholder="Ashoka E-mail" type="email"/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password"/><br><small>(Passwords must contain at least six characters.)<small>
+        </div>
+         <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Confirm Password" type="password"/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="number" placeholder="Phone Number" type="text"/><br>(Phone number must be ten digits and without any extensions.)
+        </div>
+         <div class="form-group">
+            <select name="batch" class="form-control">
+                  <option value="UG20">UG20</option>
+                  <option value="UG19">UG19</option>
+                  <option value="UG18">UG18</option>
+                  <option value="ASP18">ASP18</option>
+                  <option value="YIF18">YIF18</option>
+                  <option value="MLS">MLS</option>
+                  <option value="MA ECO">MA ECO</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select name="dorm" class="form-control">
+                  <option value="SH1">SH1</option>
+                  <option value="SH2">SH2</option>
+                  <option value="SH3">SH3</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Register</button>
+    </form>
+{% endblock %}
